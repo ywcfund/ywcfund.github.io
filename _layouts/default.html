@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body class="{{page.class}}">
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+<script src="https://use.typekit.net/lcl3ptj.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    {% include google-analytics.html %}
+</html>

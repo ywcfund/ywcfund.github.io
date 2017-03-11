@@ -1,0 +1,22 @@
+---
+layout: default
+title: News
+permalink: /news/
+class: news
+show: 1
+order: 4
+---
+<h1 style="text-align:center; padding: 1em 0;">News</h1>
+{% for post in site.posts %}
+    <article class='row white'>
+        <div class="small-10 small-centered columns">
+            <header>
+                <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+                <h2><a href="{{post.url}}">{{ post.title | escape }}</a></h2>
+            </header>
+            <section>
+                <div class="post-content">{{ post.content }}</div>
+            </section>
+        </div>
+    </article>
+{% endfor %}

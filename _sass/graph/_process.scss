@@ -1,0 +1,146 @@
+#hero-scholarship, #hero-partners {
+background: $graphline;
+overflow: hidden;
+padding:0;
+img {
+  max-width: 100%;
+}
+}
+
+
+
+.scholarship {
+    @include graph;
+}
+
+.scholarship svg {
+  // width: 200px;
+  height: 150px;
+  max-width: 20%;
+  // margin-right: 5%;
+  * {
+    stroke: #52C5D0;
+  }
+}
+
+.step-left, .step-right {
+    // border: 2px black solid;
+
+    overflow: hidden;
+    margin-bottom: 3em;
+
+}
+
+.step-left {
+/*url(../assets/imgs/patterns/process-box-left.svg) no-repeat right, */
+  background: rgba(255,255,255,.6);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+25&0+0,0.6+25 */
+background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 25%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 25%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 25%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#99ffffff',GradientType=1 ); /* IE6-9 */
+  // background-size: contain;
+    padding: 40px 5% 40px 0;
+svg {
+float: left;
+margin-right: 10%;
+}
+
+.step-copy {
+    float: left;
+    width: 65%;
+}
+}
+
+.step-right {
+  /*url(../assets/imgs/patterns/process-box-right.svg) no-repeat left,*
+    background:  rgba(255,255,255,.6);
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+75,ffffff+100&0.5+75,0+100 */
+background:-moz-linear-gradient(left, rgba(255,255,255,0.6) 75%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,255,255,0.6) 75%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background:  linear-gradient(to right, rgba(255,255,255,0.6) 75%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    padding: 40px 0 40px 0;
+
+svg {
+float: right;
+margin-left: 10%;
+}
+
+.step-copy {
+    float: right;
+    width: 65%;
+}
+}
+@mixin start($start, $delay) {
+  animation: offset $start linear forwards;
+  animation-delay: $start+$delay;
+  -webkit-animation: offset $start linear forwards;
+  -webkit-animation-delay: $start+$delay;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+
+#find {
+  .circle1 {
+    @include start(4s, -3s);
+  }
+  .circle2 {
+    @include start(4s, -2s);
+  }
+  .handle {
+    @include start(4s, -1s);
+  }
+}
+
+#application {
+
+  .paper {
+    @include start(4s, 0s);
+  }
+  .text {
+    @include start(4s, 1750ms);
+  }
+  .check {
+    @include start(4s, 2500ms);
+  }
+}
+
+
+#approved polygon {
+  @include start(4s, 3s);
+}
+
+#award {
+  .top {
+    @include start(3s, 6s);
+  }
+  .ribbon1 {
+    @include start(2.5s, 7.5s);
+  }
+  .ribbon2 {
+    @include start(2.5s, 8s);
+  }
+}
+
+#school {
+  .outer {
+    @include start(3s, 8s);
+  }
+  .inner {
+    @include start(3s, 9.4s);
+  }
+  line {
+    @include start(3s, 10.25s);
+  }
+  polyline {
+    @include start(3s, 10.75s);
+  }
+}

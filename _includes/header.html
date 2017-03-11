@@ -1,0 +1,14 @@
+<header class="site-header row expanded" role="banner">
+    <h1><a class="logo" href="{{ "/" | relative_url}}">
+        <img src="../assets/imgs/partners/yesfund-fc.svg" alt="logo for the fund">
+    </a></h1>
+    <nav class="nav-collapse" role="navigation">
+        <ul>
+            {% assign tutorials = (site.pages | where: "show" , "1") | sort: "order" %}
+            {% for page in tutorials %}
+            <li><a class="page-link" href="{{ page.url }}">{{ page.title | escape }}</a></li>
+            {% endfor %}
+            <li><a class="donate-link" href="https://www.yeswecode.org/donate">Donate</a></li>
+        </ul>
+    </nav>
+</header>
