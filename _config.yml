@@ -18,7 +18,7 @@ email: info@yeswecodefund.com
 description: > # this means to ignore newlines until "baseurl:"
   The #YesWeCode Fund is a partnership of organizations committed to increasing access to technology education for all. The scholarship fund is designed to remove financial barriers for people who are underrepresented in the technology industry, including women and people of color. Students with financial need are encouraged to apply to receive a full-tuition scholarship to attend a full-time, immersive code school and take the first step toward a fulfilling career in technology.
 baseurl: '' # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'http://www.yeswecodefund.com' # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
