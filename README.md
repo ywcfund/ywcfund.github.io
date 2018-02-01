@@ -4,9 +4,8 @@
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* This is the website for the #YesWeCode Fund scholarship website.
+* It's written in HAML and Sass, and uses parts of Materialize and Foundation in a custom system called Graph.
 
 ### Contribution guidelines ###
 
