@@ -1,9 +1,0 @@
-# Aerobatic website manifest
-id: b1178494-9812-4ece-a5ca-9ceeafaee9b5
-plugins:
-  - path: /
-    options:
-      password: scholarship
-      username: partner
-    name: basic-auth
-  - name: webpage
