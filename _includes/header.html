@@ -7,7 +7,8 @@
             {% assign tutorials = (site.pages | where: "show" , "1") | sort: "order" %}
             {% for page in tutorials %}
             <li><a class="page-link" href="{{ page.url }}">{{ page.title | escape }}</a></li>
-            {% endfor %}
+            
+            {% endfor %} 
             <li><a class="donate-link" href="https://www.yeswecode.org/donate">Donate</a></li>
         </ul>
     </nav>
